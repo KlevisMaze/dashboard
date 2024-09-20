@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { admin_login } from "../../store/Reducers/authReducer";
 
+
 const AdminLogin = () => {
 
    const dispatch = useDispatch()
@@ -15,7 +16,7 @@ const AdminLogin = () => {
   const inputHandle = (e) => {
     setState({
       ...state,
-      [e.target.name]: e.target.value,
+      [e.target.name] : e.target.value,
     });
   };
 
@@ -31,7 +32,7 @@ const AdminLogin = () => {
         <div className="bg-[#6f68d1] p-4 rounded-md">
          
          <div className="h-[70] flex justify-center items-center">
-            <div className="w-[180px] h-[50px]">
+            <div className="w-[100px] h-[50px]">
                 <img className="w-20 h-20 justify-center" src="http://localhost:3000/images/logo.png" alt="image"/>
             </div>
 
